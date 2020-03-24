@@ -1,0 +1,6 @@
+C:\Users\91708\source\repos\EntertainmentDb\bin\Debug\EntertainmentDb.exe.config
+C:\Users\91708\source\repos\EntertainmentDb\bin\Debug\EntertainmentDb.exe
+C:\Users\91708\source\repos\EntertainmentDb\bin\Debug\EntertainmentDb.pdb
+C:\Users\91708\source\repos\EntertainmentDb\obj\Debug\EntertainmentDb.csprojAssemblyReference.cache
+C:\Users\91708\source\repos\EntertainmentDb\obj\Debug\EntertainmentDb.exe
+C:\Users\91708\source\repos\EntertainmentDb\obj\Debug\EntertainmentDb.pdb

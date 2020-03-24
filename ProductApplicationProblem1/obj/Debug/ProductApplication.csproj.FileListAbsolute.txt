@@ -1,0 +1,6 @@
+C:\Users\91708\source\repos\ProductApplication\obj\Debug\ProductApplication.csprojAssemblyReference.cache
+C:\Users\91708\source\repos\ProductApplication\bin\Debug\ProductApplication.exe.config
+C:\Users\91708\source\repos\ProductApplication\bin\Debug\ProductApplication.exe
+C:\Users\91708\source\repos\ProductApplication\bin\Debug\ProductApplication.pdb
+C:\Users\91708\source\repos\ProductApplication\obj\Debug\ProductApplication.exe
+C:\Users\91708\source\repos\ProductApplication\obj\Debug\ProductApplication.pdb
