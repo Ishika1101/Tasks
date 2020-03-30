@@ -1,0 +1,11 @@
+C:\Users\91708\source\repos\FileOperations\bin\Debug\netcoreapp3.1\FileOperations.exe
+C:\Users\91708\source\repos\FileOperations\bin\Debug\netcoreapp3.1\FileOperations.deps.json
+C:\Users\91708\source\repos\FileOperations\bin\Debug\netcoreapp3.1\FileOperations.runtimeconfig.json
+C:\Users\91708\source\repos\FileOperations\bin\Debug\netcoreapp3.1\FileOperations.runtimeconfig.dev.json
+C:\Users\91708\source\repos\FileOperations\bin\Debug\netcoreapp3.1\FileOperations.dll
+C:\Users\91708\source\repos\FileOperations\bin\Debug\netcoreapp3.1\FileOperations.pdb
+C:\Users\91708\source\repos\FileOperations\obj\Debug\netcoreapp3.1\FileOperations.csprojAssemblyReference.cache
+C:\Users\91708\source\repos\FileOperations\obj\Debug\netcoreapp3.1\FileOperations.AssemblyInfoInputs.cache
+C:\Users\91708\source\repos\FileOperations\obj\Debug\netcoreapp3.1\FileOperations.AssemblyInfo.cs
+C:\Users\91708\source\repos\FileOperations\obj\Debug\netcoreapp3.1\FileOperations.dll
+C:\Users\91708\source\repos\FileOperations\obj\Debug\netcoreapp3.1\FileOperations.pdb
