@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\91708\\source\\repos\\HospitalManagement\\HospitalManagement.csproj": {}
+    "C:\\Users\\91708\\source\\repos\\Tasks\\HospitalManagement\\HospitalManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\91708\\source\\repos\\HospitalManagement\\HospitalManagement.csproj": {
+    "C:\\Users\\91708\\source\\repos\\Tasks\\HospitalManagement\\HospitalManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\91708\\source\\repos\\HospitalManagement\\HospitalManagement.csproj",
+        "projectUniqueName": "C:\\Users\\91708\\source\\repos\\Tasks\\HospitalManagement\\HospitalManagement.csproj",
         "projectName": "HospitalManagement",
-        "projectPath": "C:\\Users\\91708\\source\\repos\\HospitalManagement\\HospitalManagement.csproj",
+        "projectPath": "C:\\Users\\91708\\source\\repos\\Tasks\\HospitalManagement\\HospitalManagement.csproj",
         "packagesPath": "C:\\Users\\91708\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\91708\\source\\repos\\HospitalManagement\\obj\\",
+        "outputPath": "C:\\Users\\91708\\source\\repos\\Tasks\\HospitalManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91708\\AppData\\Roaming\\NuGet\\NuGet.Config",
