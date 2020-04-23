@@ -116,3 +116,75 @@ WHERE ProductDetails.ProductId = Products.ProductId
 FOR XML AUTO, type, ELEMENTS)
 FROM dbo.Products 
 FOR XML PATH ('Product'), ROOT ('Products'), ELEMENTS;
+
+
+---demo 6
+
+use AdventureWorks2017
+select * from dbo.DatabaseLog
+DECLARE @xmldoc AS int, @xml AS xml;
+SELECT @xml=XmlEvent from dbo.DatabaseLog;
+EXEC sp_xml_preparedocument @xmldoc OUTPUT,
+@xml;
+
+SELECT * FROM OPENXML(@xmldoc, 'Event_Instance', 3)
+WITH (
+PostTime datetime2
+)
+EXEC sp_xml_removedocument @xmldoc;
+
+use AdventureWorks2017
+select d.DatabaseLogId,Eventd.value('PostTime[1]','datetime2') as PostTime
+from dbo.DatabaseLog as d
+cross Apply
+d.XmlEvent.nodes('/Event_Istance') as EventInfo(Eventd);
+
+--labexercise
+
+use ProductDb
+create schema Marketing authorization dbo
+create table Marketing.Product(
+ProductId int,
+ProductName varchar(30),
+ListPrice float,
+SellStartDate Datetime ,
+Color Varchar(30)
+);
+
+create table Marketing.ProductModel(
+ProdutModelId int,
+ProductModel varchar(30));
+create Procedure GetAvailableModelsAsXML
+as begin
+select * from Marketing.Product inner join Marketing.ProductModel on Marketing.Product.ProductId= Marketing.ProductModel.ProdutModelId 
+where SellStartDate Is Not null 
+order by SellStartDate asc ,ProductName asc
+for xml raw('AvailableModel'),root('AvailableModels')
+end
+
+exec GetAvailableModelsAsXML
+
+---second sp
+create table sales(
+SalesTerritoryId int,
+xmldata xml
+);
+Insert into Sales(SalesTerritoryId,xmldata) values(1,'
+<SalespersonMods>
+<SalespersonMod BusinessEntityID="274">
+<Mods>
+<Mod SalesTerritoryID="3"/>
+</Mods>
+</SalespersonMod>
+<SalespersonMod BusinessEntityID="278">
+<Mods>
+<Mod SalesTerritoryID="4"/>
+</Mods>
+</SalespersonMod>
+</SalespersonMods>');
+
+ UPDATE sales
+SET SalesTerritoryId=(select xmldata.value('Mods/Mod/@SalesTerritoryID','int') from sales) where SalesTerritoryId=1
+
+
+
