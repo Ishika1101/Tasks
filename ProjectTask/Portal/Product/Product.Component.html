@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+            <form [formGroup]="searchgroup">
+          <input class="search_input" type="text" name="" placeholder="Search..." formControlName="pname">
+          <button (click)="Search()"><i class="fas fa-search"></i></button>
+          <button ><a href="#" routerLink='/update'>Update</a></button>
+          <button ><a href="#" routerLink='/addProduct'>Add Product</a></button>
+
+        </form>
+        </div>
+    </div>
+    
+    <div class="col-sm-6" *ngFor="let result of result">
+       <div class="card">
+         <div class="card-body" >
+           
+             
+               
+               <div class="row">
+                    <label  class="col-sm-5 col-form-label"><b>Product Code:</b></label>
+                    <div class="col-sm-7">
+                    {{result.ProductCode}}
+                    </div>
+               </div>
+               <div class="row">
+                    <label  class="col-sm-5 col-form-label"><b>Product Name:</b> </label>
+                    <div class="col-sm-7">
+                        {{result.ProductName}}
+                    </div>
+               </div>
+               <div class="row">
+                    <label  class="col-sm-5 col-form-label"><b>Product Price:</b></label>
+                    <div class="col-sm-7">
+                    {{result.ProductPrice}}
+                    </div>
+                </div>
+
+                
+                       
+                <div class="row">
+                    <label  class="col-sm-5 col-form-label"><b>Brand :</b></label>
+                        <div class="col-sm-7">
+                        {{result.Brand}}      
+                        </div>
+                </div>
+               
+                <div class="row">
+                <button  (click)="delete(result.ProductId)" class="btn btn-primary ">Delete</button>&nbsp;&nbsp;
+            </div>
+              
+             
+         </div>
+       </div>
+    
+    
+    </div>
+   
+</div>
+   <router-outlet></router-outlet> 
+   

@@ -1,0 +1,102 @@
+<div class="container">
+    
+    <div class="col-md-10">
+    <div class="card">
+      <div class="card-body">
+            <h4>Customer SignUp</h4>
+        <form [formGroup]="customerFormGroup">
+           
+              
+                
+            
+            <div class="form-group row">
+              <label  class="col-sm-5 col-form-label">First Name</label>
+              <div class="col-sm-7">
+                <input type="text" formControlName="fname" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label  class="col-sm-5 col-form-label">Last Name</label>
+                <div class="col-sm-7">
+                  <input type="text" formControlName="lname" >
+                </div>
+                
+              </div>
+           
+            
+              <div class="form-group row">
+                <label  class="col-sm-5 col-form-label">Email</label>
+                <div class="col-sm-7" >
+                  <input type="email" formControlName="email" >
+                </div>
+              </div>
+             
+              
+
+              <div class="form-group row">
+                <label  class="col-sm-5 col-form-label">Password</label>
+                <div class="col-sm-7">
+                  <input type="Password" formControlName="password">
+                </div>
+              </div>
+              
+               <div class="form-group row">
+                <label  class="col-sm-5 col-form-label">Confirm Password</label>
+                <div class="col-sm-7">
+                  <input type="Password" formControlName="Confirm" >
+                </div>
+              </div>
+              <div class="form-group row">
+                <label  class="col-sm-5 col-form-label">Mobile No</label>
+                <div class="col-sm-7">
+                  <input type="text" formControlName="mobileNumber" >
+                </div>
+              </div>
+              <div class="form-group row">
+                <label  class="col-sm-5 col-form-label">Address</label>
+                <div class="col-sm-7">
+                  <input type="text" formControlName="address" >
+                </div>
+              </div>
+              <div class="form-group row">
+                <label  class="col-sm-5 col-form-label">Gender</label>
+                <div class="col-sm-7">
+                  <input type="text" formControlName="gender" >
+                </div>
+              </div>
+              <div class="form-group row">
+                <label  class="col-sm-5 col-form-label">DOB </label>
+                <div class="col-sm-7">
+                  <input type="date" formControlName="dob" >
+                </div>
+              </div>
+              
+
+              
+              
+
+              <div class="form-group row">
+                <label  class="col-sm-5 col-form-label"></label>
+                <div class="col-sm-7">
+                    <button type="submit" (click)="Submit()" class="btn btn-primary ">Sign Up</button>
+                    <p>Already Have an account <a href="#" routerLink='/signin'>Sign In</a></p>
+                    
+
+                </div>
+              </div>
+
+              
+
+            
+          </form>
+      </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
